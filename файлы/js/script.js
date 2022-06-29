@@ -7,9 +7,28 @@
 //  console.log(result)
 //  alert(result)
 ///////////////////////////////////////////////
- const answers = []
- answers[0] = prompt('wats your name ', '')
- answers[1] = prompt('wats your surname ', '')
- answers[2] = prompt('how old are you ', '')
+//  const answers = []
+//  answers[0] = prompt('wats your name ', '')
+//  answers[1] = prompt('wats your surname ', '')
+//  answers[2] = prompt('how old are you ', '')
 
- document.write(answers + 'truten')
+//  document.write(answers + 'truten')
+ ////////////////////////////////////////////////////
+ const numberOfFilms = +prompt('how many films? ', '')
+
+ const personalMovieDB = {
+    count: numberOfFilms,
+    movies: {},
+    actors: {},
+    genres: [],
+    privat: false
+ };
+ const a = prompt('what last film do you wath? ', ''),
+    a1 = prompt('you rate for it... ', ''),
+    b = prompt('what last film do you wath? ', ''),
+    b1 = prompt('you rate for it... ', '')
+    
+ personalMovieDB.movies[a] = a1;
+ personalMovieDB.movies[b] = b1;
+
+ console.log(personalMovieDB)
