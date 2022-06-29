@@ -7,3 +7,4 @@ let storeDescription = {
 }
 
 console.log(Y)
+console.log(Yyyyy)
