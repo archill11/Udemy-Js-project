@@ -127,26 +127,35 @@
 // console.log(data)
 // console.log(result);
 // /////////////////////////////////////////////
-const lines = 5;
-let result = '';
+// const lines = 5;
+// let result = '';
 
-for (let i = 0; i <= lines+6; i+=2){
-    for (let j = 0; j <= i; j++){
-        result+='*'
+// for (let i = 0; i <= lines+6; i+=2){
+//     for (let j = 0; j <= i; j++){
+//         result+='*'
+//     }
+// result+='\n'
+// }
+// console.log(result)
+// /////////////////////////////////////////////
+function getMathResult(a, b) {
+    if ((typeof(b) === 'number') && (b > 0)){
+        let s = a
+        let str = a
+    for (let i=0; i<b-1; i++){
+        s+=a
+        str = str + '---'
+        str = str + s   
     }
-result+='\n'
+    console.log(str)
+    }else{
+        console.log(a)
+    }
 }
-
-console.log(result)
-
-
-
-
-
-
-
-
-
+getMathResult(10, 5)
+// /////////////////////////////////////////////
+const logg = 'Hello world'
+console.log(logg.substring(7, 1))
 
 
 
