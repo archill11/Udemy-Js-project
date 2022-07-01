@@ -138,30 +138,149 @@
 // }
 // console.log(result)
 // /////////////////////////////////////////////
-function getMathResult(a, b) {
-    if ((typeof(b) === 'number') && (b > 0)){
-        let s = a
-        let str = a
-    for (let i=0; i<b-1; i++){
-        s+=a
-        str = str + '---'
-        str = str + s   
-    }
-    console.log(str)
-    }else{
-        console.log(a)
-    }
-}
-getMathResult(10, 5)
+// function getMathResult(a, b) {
+//     if ((typeof(b) === 'number') && (b > 0)){
+//         let s = a
+//         let str = a
+//     for (let i=0; i<b-1; i++){
+//         s+=a
+//         str = str + '---'
+//         str = str + s   
+//     }
+//     console.log(str)
+//     }else{
+//         console.log(a)
+//     }
+// }
+// getMathResult(10, 5)
 // /////////////////////////////////////////////
-const logg = 'Hello world'
-console.log(logg.substring(7, 1))
+// function calculateVolumeAndArea(a) {
+//     if ((Number.isInteger(a)) && (a > 0)) {
+//     console.log(`Объем куба: ${a*a*a}, площадь всей поверхности: ${a*a*6}`)
+//     }else{
+//     console.log(`При вычислени произошла ошибка `)
+//     }
+// }
+// calculateVolumeAndArea(5)
+// /////////////////////////////////////////////
+// function getCoupeNumber(a) {
+//     if ((a === 0) || (a > 35)) {
+//         console.log(`Таких мест в вагоне не существует`);
+//     }else if ((Number.isInteger(a)) && (a > 0)){
+//         console.log(Math.ceil(a/4));
+//     }else{
+//         console.log(`Ошибка. Проверьте правильность введенного номера места`) ;
+//     }
+// }
+// getCoupeNumber(7)
+// /////////////////////////////////////////////
+// function getTimeFromMinutes(a) {
+//     let h = parseInt((a/60));
+//     let m = a % 60;
+//     if ((Number.isInteger(a)) && (a>=0)){
+//     if ((h === 0) || ((h >4) && (h < 11))){
+//         console.log(`Это ${h} часов и ${m} минут`);
+//     }else if (h === 1){
+//         console.log(`Это ${h} час и ${m} минут`);
+//     }else{
+//         console.log(`Это ${h} часа и ${m} минут`);
+//     }
+// }else{
+//     return (`Ошибка, проверьте данные`)
+// }
+// }
+// getTimeFromMinutes(250)
+// /////////////////////////////////////////////
+// function findMaxNumber(a,b,c,d) {
+//     if ((typeof(a) === 'number') && (typeof(b) === 'number') && (typeof(c) === 'number') && (typeof(d) === 'number')){
+//     console.log(Math.max(a,b,c,d));
+//     }else{
+//         console.log(0);
+//     }
+// }
+// findMaxNumber(1,5,11,'6')
+/////////////////////////////////////////////////
+// function fib(a) {
+//     let fibstr = '0 1'
+//     if (a===0) console.log('')
+//     else if (typeof(a) != 'number' || (!Number.isInteger(a)) ) console.log('')
+//     else if (a===1) console.log('0')
+//     else {
+//         let f = [0,1]
+//         for (let i = 2; i<a; i++ ){
+//             f[i] = f[i-1] + f[i-2]
+//             fibstr+=(` ${f[i-1] + f[i-2]}`)
+            
+//         }console.log(fibstr)
+//     }
+// }
+// fib(6)
+/////////////////////////////////////////////////
+// const personalPlanPeter = {
+//     name: "Peter",
+//     age: "29",
+//     skills: {
+//         languages: ['ru', 'eng'],
+//         programmingLangs: {
+//             js: '20%',
+//             php: '10%'
+//         },
+//         exp: '1 month'
+//     },
+//     showAgeAndLangs: function(plan) {
+//         const {age} = plan;
+//         const {languages} = plan.skills;
+//         let str = `Мне ${age} и я владею языками: `;
 
+//         languages.forEach(function(lang) {
+//             str += `${lang.toUpperCase()} `;
+//         });
 
+//         console.log(str)
+//     }
+// };
+// personalPlanPeter.showAgeAndLangs(personalPlanPeter)
 
+// function showExperience(plan) {
+//     console.log(plan['skills']['exp'])
+// }
+// showExperience(personalPlanPeter)
 
+// function showProgrammingLangs(plan) {
+//     let str = '';
+//     const {programmingLangs} = plan['skills']
+//     for (let key in plan['skills']['programmingLangs']){
+//         str += `Язык ${key} изучен на ${programmingLangs[key]}\n`
+//     }
+//     console.log(str)
+// }
+// showProgrammingLangs(personalPlanPeter)
+//////////////////////////////////////////////////////////////////////
+// const family = ['Peter', 'Ann', 'Alex', 'Linda'];
+// function showFamily(arr) {
+//     if (arr.length === 0){
+//         console.log(`Семья пуста`)
+//     }else{console.log(`Семья состоит из: ${arr.join(' ')}`)
+// }
+// }
+// showFamily(family)
 
+// const favoriteCities = ['liSBon', 'ROME', 'miLan', 'Dublin'];
+// function standardizeStrings(arr) {
+//     for (let v of arr){
+//         console.log(v.toLowerCase())
+//     }
+// }
+// standardizeStrings(favoriteCities)
+//////////////////////////////////////////////////////////////////////
 
+let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+let arr2 = []
+for (let i = arr.length; i >0; i--){
+    let p = arr.pop()
+    arr2.push(p)
+}
 
+console.log(arr2)
 
 
